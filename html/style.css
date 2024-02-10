@@ -1,0 +1,356 @@
+body {
+ font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+ display: none;
+}
+
+.appView { 
+ position: absolute;
+ display: none;
+
+ left: 25%; 
+ top: 20%;
+
+ height: 60%;
+ width: 50%;
+ 
+ background-color: #0A0A0C;
+}
+
+.appMenu {
+ position: absolute;
+ 
+ height: 92%;
+ width: 27.5%;
+
+ background-color: #262626;
+}
+
+.appHeader {
+ position: relative;
+ 
+ height: 8%;
+ width: 100%;
+ 
+ background-color: #1A1A1A;
+}
+
+.appTitle {
+ position: absolute;
+ 
+ padding: 0%; 
+ margin: 0%;
+
+ margin-top: 0.9%;
+ margin-left: 1.25%;
+
+ font-size: 1.5vw;
+ color: white;
+}
+
+.appWebstoreButton {
+ color: white;
+ background-color: #1A1A1A;
+
+ padding: 0.75%;
+ border: solid 0.2px rgba(255, 255, 255, 0.2);
+ border-radius: 0%;
+
+ margin-top: 1.25%;
+ margin-right: 2.6%;
+
+ float: right;
+}
+
+.appWebstoreButton:hover {
+ background-color: #343333;
+ border: solid 0.2px rgba(184, 162, 162, 0.4);
+ cursor: pointer;
+}
+
+.appMenuButton {
+ positon: relative;
+
+ width: 100%;
+
+ background-color: #262626;
+ border: none;
+ 
+ padding-top: 4.5%;
+ padding-bottom: 5%;
+}
+
+.appMenuButtonContent {
+ color: rgba(225, 225, 225, 0.8);
+ 
+ margin-left: 5%;
+
+ font-size: 1.0vw;
+}
+
+.appMenuButton:hover, .appMenuButtonActive {
+ background-color: #424141;
+ color: white;
+ cursor: pointer;
+}
+
+.fas {
+ color: white;
+}
+
+.appPage {
+ position: absolute;
+
+ height: 92%;
+ width: 72.5%;
+
+ left: 27.5%;
+ background-color: #0A0A0C;
+}
+
+.appPageTitle {
+ position: relative;
+
+ margin-top: 2.5%;
+ margin-left: 4%;
+
+ font-size: 1.5vw;
+ font-weight: normal;
+ color: white;
+ padding: 0%;
+}
+
+.appPageButton {
+ positon: relative;
+
+ width: 15%;
+
+ background-color: #053bd1;
+ color: rgba(255, 255, 255, 0.95);
+ font-weight: bold;
+ 
+ border: none;
+ 
+ padding-top: 1%;
+ padding-bottom: 1%;
+
+ float: right;
+
+ margin-right: 4%;
+ margin-top: 0.35%;
+}
+
+.appPageButton:hover {
+ background-color: #002c72;
+ color: white;
+ cursor: pointer;
+}
+
+.appPageTable {
+ position: relative;
+
+ margin-top: -1%;
+ margin-left: 4%;
+
+ width: 92%;
+ height: 84%;
+ 
+ background-color: #1A1A1A;
+ border: solid 0.2px rgba(225, 225, 225, 0.1);
+}
+
+/* stop from overflowing and scroll */
+table tbody {
+ display: block;
+ max-height: 625px;
+ overflow-y: scroll;
+}
+
+/* hide scrollbar */
+table tbody::-webkit-scrollbar {
+ display: none;
+}
+
+table thead, table tbody tr {
+ display: table;
+ width: 100%;
+ table-layout: fixed;
+ height: 5%;
+}
+
+th {
+ font-size: 0.8vw;
+ font-weight: normal;
+ color: white;
+ text-align: center;
+}
+
+td {
+ height: 5%;
+ font-size: 0.8vw;
+ font-weight: normal;
+ color: white;
+ text-align: center;
+ padding-top:0.5%;
+ padding-bottom:0.5%;
+}
+
+thead {
+ background-color: #262626;
+}
+
+table {
+ width: 100%;
+}
+
+tbody {
+ overflow-y: scroll;
+ height: 100%;
+}
+
+.tableButton {
+ background-color: #053bd1;
+ color: rgba(255, 255, 255, 0.95);
+ border: none;
+ padding: 3%;
+}
+
+#hiddenUntilHover {
+ color: black;
+ background-color: black;
+}
+
+#hiddenUntilHover:hover {
+ color: white;
+ background-color: transparent;
+ cursor: pointer;
+}
+
+.inputModel {
+ position: absolute;
+
+ left: 40%;
+ top: 35%;
+
+ width: 20%;
+ height: 30%;
+
+ background-color: #0A0A0C;
+ z-index: 10;
+}
+
+.inputModel h2 {
+ text-align: center;
+ color: white;
+}
+
+.inputModel hr {
+ width: 75%; 
+ opacity: 0.3;
+ margin-top: -1%;
+ margin-bottom: 2%; 
+ padding-top: 0%;
+}
+
+.inputModel input, .inputModel select {
+ width: 80%;
+ height: 10%;
+ margin-top: 2%;
+ margin-bottom: 2%;
+ margin-left: 10%;
+ font-size: 1.0vw;
+ text-align: center;
+ background-color: rgba(255, 255, 255, 0.8);
+ border: none;
+}
+
+.inputModel input:focus {
+ outline: none;
+}
+
+.inputModel button {
+ width: 80%;
+ height: 12%;
+ 
+ position: absolute;
+ bottom: 8.5%;
+ left: 10%;
+ 
+ background-color: #053bd1;
+ border: none;
+ color: rgba(255, 255, 255, 0.95);
+}
+
+.inputModel button:hover {
+ background-color: #002c72;
+ color: white;
+ cursor: pointer;
+}
+
+#delete { 
+ font-size: 0.8vw; 
+ margin-right: 2%; 
+ color: red;
+}
+
+#delete:hover {
+ cursor: pointer;
+ color: rgb(186, 0, 0);
+}
+
+.viewButton {
+ background-color: #053bd1;
+ color: rgba(255, 255, 255, 0.95);
+ border: none;
+ padding: 3%;
+ font-size: 0.6vw;
+}
+
+.packages {
+ position: absolute;
+ 
+ height: 100%;
+ width: 100%;
+
+ left: 0%;
+ overflow-y: scroll;
+}
+
+.package{
+ width: 26.5%;
+ margin: 1% 1%;
+ padding: 2%;
+ background: #0000003a;
+ float: left;
+}
+
+.pacakgeInfo {
+ color: white;
+ font-size: 0.75vw;
+ font-weight: normal;
+
+}
+
+.package-button {
+ background:#ffffff10;
+ color:#fff;
+ margin:0 auto;
+ padding:12px 5px;
+ text-decoration:none;
+ text-align: center;
+ font-weight: 500;
+}
+
+.package-button:hover {
+ background:#003fde3a;
+ cursor: pointer;
+}
+
+.package-image {
+ position: relative;
+ width: 100%;
+ height: auto;
+ max-height: 25%;
+}
